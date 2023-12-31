@@ -1,0 +1,42 @@
+// body { @include mxw1440 { font-size: 14px } @include mxw1024 { font-size: 12px }}
+
+@mixin mxw1670 {
+	@media (max-width: (1670px)) {
+		@content;
+	}
+}
+
+@mixin mxw1270 {
+	@media (max-width: (1240px)) {
+		@content;
+	}
+}
+
+@mixin mxw992 {
+	@media (max-width: (992px)) {
+		@content;
+	}
+}
+
+@mixin mxw768 {
+	@media (max-width: (648px)) {
+		@content;
+	}
+}
+
+@mixin mxw678 {
+	@media (max-width: (648px)) {
+		@content;
+	}
+}
+
+/* stylelint-disable */
+@mixin font-face($font-family, $url, $weight, $style) {
+	@font-face {
+	  font-family: "#{$font-family}";
+	  src: url('../fonts/#{$url}.woff2') format("woff2");
+	  font-weight: #{$weight};
+	  font-display: swap;
+	  font-style: $style;
+	}
+  }

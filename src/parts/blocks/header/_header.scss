@@ -1,0 +1,16 @@
+.header {
+	padding: 50px 0;
+	background-color: var(--accent);
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	@include mxw768 {
+		padding: 25px 0;
+	}
+}
